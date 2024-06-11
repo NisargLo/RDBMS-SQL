@@ -5,7 +5,6 @@
 */
 
 
-
 --creating database
 
 CREATE DATABASE BTECH_3A_113
