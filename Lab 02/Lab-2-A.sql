@@ -11,10 +11,8 @@
      9. Give name of customers who opened account after date '1-12-96' from deposit table. 
      10. Display name of customers whose account no is less than 105 from deposit table.
      11. Display name of customer who belongs to either ‘NAGPUR’ or ‘DELHI’ from customer table. (OR & IN)
-     12. Display name of customers with branch whose amount is greater than 4000 and account no is less than 
-     105 from deposit table.
-     13. Find all borrowers whose amount is greater than equals to 3000 & less than equals to 8000 from borrow 
-     table. (AND & BETWEEN)
+     12. Display name of customers with branch whose amount is greater than 4000 and account no is less than 105 from deposit table.
+     13. Find all borrowers whose amount is greater than equals to 3000 & less than equals to 8000 from borrow table. (AND & BETWEEN)
      14. Find all depositors who do not belongs to ‘ANDHERI’ branch from deposit table.
      15. Display Account No, Customer Name & Amount of such customers who belongs to ‘AJNI’, ‘KAROLBAGH’ 
      Or ‘M.G.ROAD’ and Account No is less than 104 from deposit table.
