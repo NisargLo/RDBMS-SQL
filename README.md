@@ -1,3 +1,3 @@
-<i><h1>Semester - 3</h1>
-<h1>Subject : Database Management System - 1</h1>
-<h1>Programming Language : SQL-16.0</h1></i>
+<i><h2>Semester - 3</h2>
+<h2>Subject : Database Management System - 1</h2>
+<h2>Programming Language : SQL</h2></i>
