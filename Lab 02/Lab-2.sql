@@ -80,7 +80,7 @@ SELECT TOP 50 PERCENT * FROM BORROW;
 SELECT TOP 10 PERCENT AMOUNT FROM DEPOSIT;
 
 --3. Display top 25% customer who deposited more than 5000.
-SELECT TOP 25 PERCENT CNAME FROM DEPOSIT WHERE AMOUNT>5000
+SELECT TOP 25 PERCENT * FROM DEPOSIT WHERE AMOUNT>5000
 
 --4. Retrieve first 10% Loan Amounts.
 SELECT TOP 10 PERCENT LOANNO FROM BORROW
@@ -110,3 +110,11 @@ SELECT DISTINCT CITY FROM CUSTOMERS;
 
 --TOP 50%
 SELECT TOP 50 PERCENT * FROM BORROW;
+
+--To get value in which we have to make desicion based on 2 tables, or there is 1 column which is common in both tables
+-- JOIN & ON :-
+SELECT si.roll_number, si.name
+FROM student_information si
+JOIN faculty_information fi 
+ON si.advisor = fi.employee_id
+WHERE fi.gender='M' AND fi.salary>15000;
