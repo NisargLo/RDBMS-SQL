@@ -17,7 +17,7 @@ SELECT ACTNO, CNAME, AMOUNT FROM DEPOSIT
 
 --5. Display Loan No, Amount from BORROW.
 SELECT LOANNO, AMOUNT FROM BORROW
- 
+
 --6. Display loan details of all customers who belongs to ‘ANDHERI’ branch from borrow table.
 SELECT * FROM BORROW WHERE BNAME='ANDHERI';
 
