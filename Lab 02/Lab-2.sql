@@ -4,19 +4,19 @@
 -- PART-A :
 
 --1. Retrieve all data from table DEPOSIT.
-SELECT * FROM DEPOSIT
+SELECT * FROM DEPOSIT;
 
 --2. Retrieve all data from table BORROW.
-SELECT * FROM BORROW
+SELECT * FROM BORROW;
 
 --3. Retrieve all data from table CUSTOMERS.
-SELECT * FROM CUSTOMERS
+SELECT * FROM CUSTOMERS;
 
 -- 4. Display Account No, Customer Name & Amount from DEPOSIT.
-SELECT ACTNO, CNAME, AMOUNT FROM DEPOSIT
+SELECT ACTNO, CNAME, AMOUNT FROM DEPOSIT;
 
 --5. Display Loan No, Amount from BORROW.
-SELECT LOANNO, AMOUNT FROM BORROW
+SELECT LOANNO, AMOUNT FROM BORROW;
 
 --6. Display loan details of all customers who belongs to ‘ANDHERI’ branch from borrow table.
 SELECT * FROM BORROW WHERE BNAME='ANDHERI';
@@ -55,10 +55,10 @@ SELECT ACTNO AS ACCOUNT_NO,CNAME AS CUSTOMER_NAME,AMOUNT FROM DEPOSIT WHERE BNAM
 -- PART-B :
 
 --1. Display all the details of first five customers from deposit table.
-SELECT TOP 5 * FROM DEPOSIT
+SELECT TOP 5 * FROM DEPOSIT;
 
 --2. Display all the details of first three depositors whose amount is greater than 1000.
-SELECT TOP 3 * FROM DEPOSIT WHERE AMOUNT>1000
+SELECT TOP 3 * FROM DEPOSIT WHERE AMOUNT>1000;
 
 --3. Display Loan No, Customer Name of first five borrowers whose branch name does not belongs to ‘ANDHERI’ from borrow table.
 SELECT TOP 5 LOANNO,CNAME FROM BORROW WHERE BNAME<>'ANDHERI';
@@ -80,41 +80,20 @@ SELECT TOP 50 PERCENT * FROM BORROW;
 SELECT TOP 10 PERCENT AMOUNT FROM DEPOSIT;
 
 --3. Display top 25% customer who deposited more than 5000.
-SELECT TOP 25 PERCENT * FROM DEPOSIT WHERE AMOUNT>5000
+SELECT TOP 25 PERCENT * FROM DEPOSIT WHERE AMOUNT>5000;
 
 --4. Retrieve first 10% Loan Amounts.
-SELECT TOP 10 PERCENT LOANNO FROM BORROW
+SELECT TOP 10 PERCENT LOANNO FROM BORROW;
 
 --5. Retrieve all unique customer names with city.
-SELECT DISTINCT CNAME,CITY FROM CUSTOMERS
-SELECT DISTINCT * FROM CUSTOMERS
+SELECT DISTINCT CNAME,CITY FROM CUSTOMERS;
+SELECT DISTINCT * FROM CUSTOMERS;
 
 --6. Retrieve all Loan records with one more column in Loan Amount as 10% extra amount.
-SELECT *, (AMOUNT + (AMOUNT*10/100)) AS 'EXTRA_AMOUNT' FROM BORROW
+SELECT *, (AMOUNT + (AMOUNT*10/100)) AS 'EXTRA_AMOUNT' FROM BORROW;
 
 --7. Retrieve all odd/even value loan number from Borrow table.
 -- ODD :
 SELECT * FROM BORROW WHERE LOANNO%2=1;
 -- EVEN :
 SELECT * FROM BORROW WHERE LOANNO%2=0;
-
-
-
--- NOTE :-
-
---TOP 5
-SELECT TOP 5 * FROM DEPOSIT;
-
---SHOW ONLY ONCE
-SELECT DISTINCT CITY FROM CUSTOMERS; 
-
---TOP 50%
-SELECT TOP 50 PERCENT * FROM BORROW;
-
---To get value in which we have to make desicion based on 2 tables, or there is 1 column which is common in both tables
--- JOIN & ON :-
-SELECT si.roll_number, si.name
-FROM student_information si
-JOIN faculty_information fi 
-ON si.advisor = fi.employee_id
-WHERE fi.gender='M' AND fi.salary>15000;
