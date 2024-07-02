@@ -79,3 +79,13 @@ SELECT * FROM EMPLOYEE_MASTER;
 --8. Remove Employee_MASTER table. (Use Drop)
 DROP TABLE EMPLOYEE_MASTER;
 SELECT * FROM EMPLOYEE_MASTER;  --NO ANSWER AS 'DROP';
+
+
+
+--Part–C :
+
+--1. Summarize Delete, Truncate and Drop.
+
+-- Delete: The DELETE operation is used to remove one or more records from a table based on a specified condition.
+-- Truncate: The TRUNCATE command removes all records from a table but keeps the table structure intact. 
+-- Drop: The DROP command removes an entire table, including its structure and records.
