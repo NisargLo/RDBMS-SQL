@@ -1,3 +1,6 @@
+USE NISARG_DATABASE;
+
+
 --Part–A :
 
 --Create table and inset records as per below.
@@ -60,8 +63,8 @@ SELECT CITY, MAX(SALARY) AS HIGHEST_SALARY FROM EMP GROUP BY CITY;
 --13. Find department wise lowest salary.
 SELECT DEPARTMENT, MIN(SALARY) AS LOWEST_SALARY FROM EMP GROUP BY DEPARTMENT;
 
-14. Display city with the total number of employees belonging to each city.
-
+--14. Display city with the total number of employees belonging to each city.
+SELECT 
 
 15. Give total salary of each department of EMP table.
 
