@@ -1,3 +1,6 @@
+USE BTECH_CSE_3A_113;
+
+
 --Part–A :
 
 --Use Deposit_Detail table (Altered table of DEPOSIT) 

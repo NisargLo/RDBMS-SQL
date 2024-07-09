@@ -1,3 +1,6 @@
+USE BTECH_CSE_3A_113;
+
+
 -- Part–A :
 
 --From the above given tables perform the following queries (UPDATE Operation):

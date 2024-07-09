@@ -1,3 +1,6 @@
+USE BTECH_CSE_3A_113;
+
+
 --From the above given tables perform the following queries:
 
 
