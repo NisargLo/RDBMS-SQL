@@ -12,11 +12,11 @@ CREATE TABLE STUDENT(
 );
 
 INSERT INTO STUDENT (STUID, FIRSTNAME, LASTNAME, WEBSITE, CITY, ADDRESS) VALUES (1011, 'Keyur', 'Patel', 'techonthenet.com', 'Rajkot', 'A-303 ''Vasant Kunj'', Rajkot'),
-																				(1022, 'Hardik', 'Shah', 'digminecraft.com', 'Ahmedabad', '"Ram Krupa", Raiya Road'),
-																				(1033, 'Kajal', 'Trivedi', 'bigactivities.com', 'Baroda', 'Raj bhavan plot, near garden'),
-																				(1044, 'Bhoomi', 'Gajera', 'checkyourmath.com', 'Ahmedabad', '"Jig’s Home", Narol'),
-																				(1055, 'Harmit', 'Mitel', '@me.darshan.com', 'Rajkot', 'B-55, Raj Residency'),
-																				(1066, 'Ashok', 'Jani', NULL, 'Baroda', 'A502, Club House Building');
+										(1022, 'Hardik', 'Shah', 'digminecraft.com', 'Ahmedabad', '"Ram Krupa", Raiya Road'),
+										(1033, 'Kajal', 'Trivedi', 'bigactivities.com', 'Baroda', 'Raj bhavan plot, near garden'),
+										(1044, 'Bhoomi', 'Gajera', 'checkyourmath.com', 'Ahmedabad', '"Jig’s Home", Narol'),
+										(1055, 'Harmit', 'Mitel', '@me.darshan.com', 'Rajkot', 'B-55, Raj Residency'),
+										(1066, 'Ashok', 'Jani', NULL, 'Baroda', 'A502, Club House Building');
 SELECT * FROM STUDENT;
 
 
