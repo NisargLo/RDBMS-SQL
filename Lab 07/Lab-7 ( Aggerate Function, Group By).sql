@@ -14,13 +14,14 @@ CREATE TABLE EMP(
 	CITY VARCHAR(10)
 );
 
-INSERT INTO EMP (EID, ENAME, DEPARTMENT, SALARY, JOINING_DATE, CITY) VALUES (101, 'Rahul', 'Admin', 56000, '1990-01-01', 'Rajkot'),
-																			(102, 'Hardik', 'IT', 18000, '1990-09-25', 'Ahmedabad'),
-																			(103, 'Bhavin', 'HR', 25000, '1991-05-14', 'Baroda'),
-																			(104, 'Bhoomi', 'Admin', 39000, '1991-02-08', 'Rajkot'),
-																			(105, 'Rohit', 'IT', 17000, '1990-07-23', 'Jamnagar'),
-																			(106, 'Priya', 'IT', 9000, '1990-08-18', 'Ahmedabad'),
-																			(107, 'Bhoomi', 'HR', 34000, '1991-12-25', 'Rajkot');
+INSERT INTO EMP (EID, ENAME, DEPARTMENT, SALARY, JOINING_DATE, CITY) 
+VALUES (101, 'Rahul', 'Admin', 56000, '1990-01-01', 'Rajkot'),
+		(102, 'Hardik', 'IT', 18000, '1990-09-25', 'Ahmedabad'),
+		(103, 'Bhavin', 'HR', 25000, '1991-05-14', 'Baroda'),
+		(104, 'Bhoomi', 'Admin', 39000, '1991-02-08', 'Rajkot'),
+		(105, 'Rohit', 'IT', 17000, '1990-07-23', 'Jamnagar'),
+		(106, 'Priya', 'IT', 9000, '1990-08-18', 'Ahmedabad'),
+		(107, 'Bhoomi', 'HR', 34000, '1991-12-25', 'Rajkot');
 SELECT * FROM EMP;
 
 
