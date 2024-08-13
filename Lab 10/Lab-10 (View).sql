@@ -1,7 +1,7 @@
 USE BTECH_CSE_3A_113;
 
 
--- Part–A:
+-- Partâ€“A:
 
 --Views (First create a view then display all views)
 
@@ -18,7 +18,8 @@ INSERT INTO STUDENT_INFO (RNO, NAME, BRANCH, SPI, BKLOG) VALUES
 (103, 'Sanjay', 'ME', 1.50, 6),
 (104, 'Neha', 'EC', 7.65, 1),
 (105, 'Meera', 'EE', 5.52, 2),
-(106, 'Mahesh', 'EC', 4.50, 3);
+(106, 'Mahesh', 'EC', 4.50, 3);
+
 SELECT * FROM STUDENT_INFO;
 
 
@@ -56,7 +57,7 @@ SELECT * FROM ACADEMIC_DATA;
 
 
 
--- Part–B:
+-- Partâ€“B:
 
 --1. Create a view that displays information of all students whose SPI is above 8.5
 CREATE VIEW FILTERED_SPI AS SELECT * FROM STUDENT_INFO WHERE SPI>8.5;
@@ -72,7 +73,7 @@ SELECT * FROM COMPUTER_VIEW;
 
 
 
---Part – C:
+-- Partâ€“C:
 
 --1. Create a view Result_EC that displays the name and SPI of students with SPI less than 5 of branch EC.
 CREATE VIEW RESULT_EC AS SELECT NAME, SPI FROM STUDENT_INFO WHERE SPI<5 AND BRANCH='EC';
@@ -82,7 +83,7 @@ SELECT * FROM RESULT_EC;
 UPDATE Result_EC SET SPI=4.90 WHERE NAME='MAHESH';
 SELECT * FROM RESULT_EC;
 
---3. Create a view Stu_Bklog with RNo, Name and Bklog columns in which name starts with ‘M’ and having bklogs more than 5.
+--3. Create a view Stu_Bklog with RNo, Name and Bklog columns in which name starts with â€˜Mâ€™ and having bklogs more than 5.
 CREATE VIEW STU_BKLOG AS SELECT RNO, NAME, BKLOG FROM STUDENT_INFO WHERE NAME LIKE 'M%' AND BKLOG>5;
 SELECT * FROM STU_BKLOG;
 
