@@ -7,7 +7,7 @@ SELECT * FROM STU_INFO;
 SELECT * FROM RESULT;
 
 
--- Part–A:
+-- Partâ€“A:
 
 --1. Combine information from student and result table using cross join or Cartesian product.
 
@@ -27,10 +27,10 @@ SELECT * FROM RESULT;
 --6. Display Rno, Name, Branch and SPI of all students.
 
 
---7. Display Rno, Name, Branch and SPI of CE branch’s student only.
+--7. Display Rno, Name, Branch and SPI of CE branchâ€™s student only.
 
 
---8. Display Rno, Name, Branch and SPI of other than EC branch’s student only.
+--8. Display Rno, Name, Branch and SPI of other than EC branchâ€™s student only.
 
 
 --9. Display average result of each branch.
@@ -40,7 +40,7 @@ SELECT * FROM RESULT;
 
 
 
--- Part–B:
+-- Partâ€“B:
 
 --1. Display average result of each branch and sort them in ascending order by SPI.
 
@@ -50,9 +50,9 @@ SELECT * FROM RESULT;
 
 
 
---Part – C:
+-- Partâ€“C:
 
---1. Retrieve the names of employee along with their manager’s name from the Employee table.
+--1. Retrieve the names of employee along with their managerâ€™s name from the Employee table.
 
 
 
