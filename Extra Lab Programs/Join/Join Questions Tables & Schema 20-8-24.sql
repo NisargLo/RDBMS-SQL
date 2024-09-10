@@ -1,4 +1,3 @@
-```sql
 CREATE DATABASE [D2D_DB]
 
 USE [D2D_DB]
@@ -82,4 +81,3 @@ INSERT [dbo].[SALESMAN] ([salesman_id], [name], [city], [commission]) VALUES (50
 INSERT [dbo].[SALESMAN] ([salesman_id], [name], [city], [commission]) VALUES (5006, N'Mc Lyon', N'Paris', CAST(0.14 AS Decimal(4, 2)))
 INSERT [dbo].[SALESMAN] ([salesman_id], [name], [city], [commission]) VALUES (5007, N'Paul Adam', N'Rome', CAST(0.13 AS Decimal(4, 2)))
 INSERT [dbo].[SALESMAN] ([salesman_id], [name], [city], [commission]) VALUES (5003, N'Lauson Hen', N'San Jose', CAST(0.12 AS Decimal(4, 2)))
-```
