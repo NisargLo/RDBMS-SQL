@@ -54,3 +54,26 @@ INSERT INTO DEPARTMENT (DID, DNAME) VALUES
 (40, 'Civil');
 
 SELECT * FROM DEPARTMENT;
+
+
+--Part – A:
+
+--1. Display details of students who are from computer department.
+SELECT * FROM STUDENT_DATA WHERE DID=(SELECT DID FROM DEPARTMENT WHERE DNAME='COMPUTER');
+
+--2. Displays name of students whose SPI is more than 8.
+SELECT NAME FROM STUDENT_DATA WHERE NO IN(SELECT RNO FROM ACADEMIC WHERE SPI>8);
+
+--3. Display details of students of computer department who belongs to Rajkot city.
+SELECT * FROM STUDENT_DATA WHERE CITY='RAJKOT' AND DID=(SELECT DID FROM DEPARTMENT WHERE DNAME='COMPUTER');
+
+--4. Find total number of students of electrical department.
+SELECT COUNT(*) COUNT FROM STUDENT_DATA WHERE DID=(SELECT DID FROM DEPARTMENT WHERE DNAME='ELECTRICAL');
+
+--5. Display name of student who is having maximum SPI.
+SELECT NAME FROM STUDENT_DATA WHERE NO IN(SELECT RNO FROM ACADEMIC WHERE SPI=(SELECT MAX(SPI) FROM ACADEMIC));
+
+--6. Display details of students having more than 1 backlog.
+
+
+
